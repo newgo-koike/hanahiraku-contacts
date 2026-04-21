@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>はなひらく 連絡先一覧（外部用）</title>
+<style>
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+    color: #333;
+    background: #fff;
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    position: relative;
+  }
+  .header {
+    background: #3d5a80;
+    padding: 36px 48px 28px;
+    color: #fff;
+  }
+  .header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .header .subtitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 14px;
+  }
+  .content {
+    padding: 32px 48px 48px;
+  }
+  .section-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #3d5a80;
+    margin-bottom: 12px;
+    margin-top: 28px;
+  }
+  .section-title:first-child {
+    margin-top: 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+    font-size: 13px;
+  }
+  thead th {
+    background: #3d5a80;
+    color: #fff;
+    text-align: left;
+    padding: 10px 14px;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  tbody tr:nth-child(even) {
+    background: #f7f9fb;
+  }
+  tbody td {
+    padding: 12px 14px;
+    vertical-align: middle;
+  }
+  tbody td.name {
+    font-weight: 700;
+  }
+  .notes {
+    margin-top: 40px;
+    font-size: 11px;
+    color: #888;
+    line-height: 1.8;
+  }
+  @media print {
+    body { width: 100%; min-height: auto; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>はなひらく</h1>
+  <div class="subtitle">
+    <span>連絡先一覧（外部用）</span>
+    <span>2026年4月21日 現在</span>
+  </div>
+</div>
+
+<div class="content">
+
+  <div class="section-title">事業所連絡先</div>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:22%">事業所</th>
+        <th style="width:22%">TEL</th>
+        <th style="width:22%">FAX</th>
+        <th>メール</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="name">代表番号</td>
+        <td>0263-87-1243</td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td class="name">寿事業所</td>
+        <td>0263-87-1243</td>
+        <td>0263-87-1244</td>
+        <td>kotobuki@hanahiraku-group.com</td>
+      </tr>
+      <tr>
+        <td class="name">塩尻事業所</td>
+        <td>0263-87-7716</td>
+        <td>0263-87-7715</td>
+        <td>shiojiri@hanahiraku-group.com</td>
+      </tr>
+      <tr>
+        <td class="name">グループホーム<br>soil</td>
+        <td>—</td>
+        <td>—</td>
+        <td>soil@hanahiraku-group.com</td>
+      </tr>
+      <tr>
+        <td class="name">共通(admin)</td>
+        <td>—</td>
+        <td>—</td>
+        <td>info@hanahiraku-group.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="section-title">担当者連絡先</div>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:22%">役職・担当</th>
+        <th style="width:14%">氏名</th>
+        <th style="width:22%">携帯番号</th>
+        <th>備考</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>事業責任者</td>
+        <td class="name">小池</td>
+        <td>未取得</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>事業責任者</td>
+        <td class="name">井出</td>
+        <td>未取得</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>寿統括</td>
+        <td class="name">芝山</td>
+        <td>070-1479-2748</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>塩尻統括</td>
+        <td class="name">上條</td>
+        <td>未取得</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>叶花-kanoka-<br>プロダクト</td>
+        <td class="name">前田</td>
+        <td>080-7448-2128</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>グループホーム<br>soil</td>
+        <td class="name">大野</td>
+        <td>090-2435-6051</td>
+        <td>グループホーム関係はこちら</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="notes">
+    ※ 本資料に記載の連絡先は業務目的のみにご使用ください。<br>
+    ※ 内容に変更がある場合は最新版をご確認ください。
+  </div>
+
+</div>
+
+</body>
+</html>
